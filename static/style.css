@@ -1,0 +1,101 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    color: white;
+}
+.main {
+    display: flex;
+    background-color: black;
+    height: 100%;
+    color: white;
+}
+.left {
+    background-color: black;
+    width: 25%;
+    padding left:1vh;
+}
+.right {
+    margin-left: 1vh;
+    background-color: black;
+    width: 75%;
+}
+.lPart{
+    height:20%;
+    font-size: 1.4vh;
+    padding: 3vh;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    border-radius: 2vh;
+}
+.ar{
+    height:100%;
+    width:20%;
+}
+.al{
+    height:100%;
+    width:20%;
+}
+.ar div{
+    height:65%;
+    background-color: brown;
+    margin: 2vh;
+    border-radius: 50%;
+}
+.al div{
+    height:70%;
+    background-color: brown;
+    margin: 2vh;
+    border-radius: 5%;
+}
+.ar div img{
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.al div img{
+    width:100%;
+    height: 100%;
+    border-radius: 5%;
+}
+.ar:hover{
+    background-color: rgb(87, 86, 86);
+}
+.al:hover{
+    background-color: rgb(87, 86, 86);
+}
+.footer p{
+    opacity: 60%;
+}
+.footer p:hover{
+    opacity: 100%;
+}
+.lPart h1{
+    opacity: 60%;
+}
+.lPart h1:hover{
+    opacity: 100%;
+}
+.sign{
+    opacity: 60%;
+}
+.sign:hover{
+    opacity: 100%;
+}
+.login:hover{
+    background-color: rgb(103, 102, 102);
+    height: 7.5vh;
+}
+.ar h2{
+    font-size: 1.1vw;
+}
+.al h2{
+    font-size: 1.1vw;
+}
+.ar p{
+    opacity: 70%;
+    font-size: smaller;
+}
+.al p{
+    opacity: 70%;
+    font-size: smaller;
+}
