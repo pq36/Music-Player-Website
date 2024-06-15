@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            height:100%;
+            width:100%;
+            background-color: rgb(78, 78, 78);
+            margin: 0;
+        }
+        .main{
+            position: absolute;
+            height:95%;
+            width:40%;
+            left:30%;
+            margin:1vw;
+            border-radius: 3vh;
+            background-color: black;
+            color: white;
+        }
+        button{
+            margin-top: 3vh;
+            height:6vh;
+            width:20vw;
+            border-radius: 5vh;
+        }
+        #a{
+            margin-top: 3vh;
+            height:6vh;
+            width:20vw;
+        }
+    </style>
+</head>
+<body style="">
+    <div class="main">
+        <div style="position: absolute;left: 20%;height:40%;top:15%;">
+            <h1>Login to Spotify</h1>
+            <button>Continue with Google</button>
+            <button>Continue with Facebook</button>
+    <form style="margin-top:10vh;padding-left:3vh;">
+        <label>Email or User name</label>
+        <br>
+        <input id='a'type="text" name="nm" >
+        <br>
+        <label>Password</label>
+        <br>
+        <input type="password" id="a" name="pass">
+        <br>
+    </form>
+    <button onclick="window.location.href='/songs'" style="background-color: green;color:white">Login</button>
+    </div>
+    </div>
+</body>
+</html>
