@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            background-color: black;
+            color: white;
+        }
+        .main {
+            height: 100%;
+            background-color: black;
+        }
+        .left p {
+            font-size: 2.5vh;
+            opacity: 70%;
+        }
+        .left p:hover{
+            opacity: 100%;
+        }
+        .ar h2, .al h2 {
+            font-size: 1.1vw;
+        }
+        .ar p, .al p {
+            opacity: 70%;
+            font-size: smaller;
+        }
+        .ar, .al {
+            height: 100%;
+            width: 20%;
+        }
+        .ar div, .al div {
+            background-color: brown;
+            margin: 2vh;
+        }
+        .ar div {
+            height: 45%;
+            border-radius: 50%;
+        }
+        .al div {
+            height: 60%;
+            border-radius: 5%;
+        }
+        .ar div img, .al div img {
+            width: 100%;
+            height: 100%;
+        }
+        .ar:hover, .al:hover {
+            background-color: rgb(87, 86, 86);
+        }
+        .pto img {
+            height: 10vh;
+            width:10vh;
+            position: absolute;
+            left:20%;
+
+        }
+        .controls button {
+            background-color: rgb(90, 90, 90);
+            border: none;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .photo img{
+            height:50vh;
+            width:50vh;
+        }
+        audio{
+            position:absolute;
+            left:29%;
+            height:5vh;
+            width:40vw;
+            background-color: black;
+            color: white;
+        }
+        .controls{
+            position: absolute;
+            left:40%;
+            top:90%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left" style="display: flex; justify-content: space-between; height: 85%;">
+            <div style="width: 25%; height: 85%;">
+                <div style="background-color: rgb(56, 56, 56); margin: 0.5%; border-radius: 2vh; height: 15%; width: 88%; padding: 3vh;">
+                    <p><i class="ri-home-2-line"></i> Home</p>
+                    <p><i class="ri-search-line"></i> Search</p>
+                </div>
+                <div style="background-color: rgb(56, 56, 56); margin: 0.5%; border-radius: 2vh; height: 85%; width: 88%; padding: 3vh; margin-top: 2%;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p><i class="ri-book-shelf-line"></i> Your Library</p>
+                        <div style="display: flex; justify-content: space-between; gap: 2vh;">
+                            <p><i class="ri-add-line"></i></p>
+                            <p><i class="ri-arrow-right-fill"></i></p>
+                        </div>
+                    </div>
+                    <div>
+                        <p style="color: white;">Playlists</p>
+                        <div style="display: flex; justify-content: space-between;">
+                            <p><i class="ri-search-line"></i></p>
+                            <p>Recents <i class="ri-align-justify"></i></p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 2vh;">
+                            <img style="height: 3vw; width: 3vw;" src="https://th.bing.com/th?id=OIP.ww5-8WM48-RSVMhbTbm1dwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2">
+                            <div>
+                                <h3 style="margin-bottom: 0.1vh;">Liked Songs</h3>
+                                <p style="margin-top: 0.1vh;">playlists</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mid" style="width: 48%; background-color: rgb(56, 56, 56); height: 95%; border-radius: 2vh; margin: 0.5%; padding: 2vh;">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                    <div style="display: flex; gap: 1vh;">
+                        <p style="border-radius: 50%; background-color: black; padding: 1vh;"><i class="ri-arrow-left-s-line"></i></p>
+                        <p style="border-radius: 50%; background-color: black; padding: 1vh;"><i class="ri-arrow-right-s-line"></i></p>
+                    </div>
+                    <div style="display: flex; gap: 1vh; align-items: center;">
+                        <button style="padding: 1vh; border-radius: 2vh;">Explore premium</button>
+                        <button style="padding: 0.8vh; border-radius: 2vh; background-color: black; color: white;"><i class="ri-download-2-fill"></i> Install App</button>
+                        <p style="border-radius: 50%; background-color: black; padding: 1vh;"><i class="ri-notification-2-line"></i></p>
+                    </div>
+                </div>
+                <div>
+                    <button style="padding: 1.3vh; border-radius: 2.5vh; color: white; background-color: rgb(90, 90, 90);">All</button>
+                    <button style="padding: 1.3vh; border-radius: 2.5vh; color: white; background-color: rgb(90, 90, 90);">Music</button>
+                    <button style="padding: 1.3vh; border-radius: 2.5vh; color: white; background-color: rgb(90, 90, 90);">Podcast</button>
+                </div>
+                <div class="content" style="overflow-y: auto; height: 84%;">
+                    <div class="m1" style="height: 20vw; margin: 2vh;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <h1>Popular Artists</h1>
+                            <p>Show all</p>
+                        </div>
+                        <div style="height: 90%; display: flex; justify-content: space-between;">
+                            <div class="ar1 ar">
+                                <div><img src="https://th.bing.com/th/id/OIP.Hg3qblSVwAa0X5SwNAYsHAHaEo?w=204&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"></div>
+                                <h2>Arijith Singh</h2>
+                                <p>Artist</p>
+                            </div>
+                            <div class="ar2 ar">
+                                <div><img src="https://th.bing.com/th?id=OIP.P6xcvqLeYxKrCWaKsijsIAHaF7&w=279&h=223&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"></div>
+                                <h2>Ed Shareen</h2>
+                                <p>Artist</p>
+                            </div>
+                            <div class="ar3 ar">
+                                <div><img src="https://th.bing.com/th/id/OIP.u6w2jys2w26iF8xFwYJCoAHaE8?w=279&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7"></div>
+                                <h2>Shreya Ghoshal</h2>
+                                <p>Artist</p>
+                            </div>
+                            <div class="ar4 ar">
+                                <div><img src="https://th.bing.com/th/id/OIP.zZuMI-WFFfCH8a0Gqi61RgHaLH?w=120&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"></div>
+                                <h2>Sonu Nigam</h2>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m2" style="height: 20vw; margin: 2vh; margin-top: 8vh;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <h1>Trendig Songs</h1>
+                            <p>Show all</p>
+                        </div>
+                        <div style="height: 90%; display: flex; justify-content: space-between;">
+                            <div class="al1 al">
+                                <div><img src="https://th.bing.com/th/id/OIP.aqCwPGH3GX4Y4rg8W-WBDAHaHa?w=173&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7""></div>
+                                <h2>unstoppable</h2>
+                                <p>Artist</p>
+                            </div>
+                            <div class="al2 al">
+                                <div><img src="https://th.bing.com/th?id=OIP.SGTIeJCfWiBbRee7qoojVAHaDt&w=349&h=174&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"></div>
+                                <h2>Dia</h2>
+                                <p>Artist</p>
+                            </div>
+                            <div class="al3 al">
+                                <div><img src="https://th.bing.com/th/id/OIP.3B9YUs55Em64o8dEZD5c3gHaKe?w=123&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"></div>
+                                <h2>Aavesham</h2>
+                                <p>Artist</p>
+                            </div>
+                            <div class="al4 al">
+                                <div><img src="https://th.bing.com/th/id/OIP.Wx13Gf0YkjxOrNkh7nfWbQHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.3&pid=1.7"></div>
+                                <h2>heat waves</h2>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m2" style="height: 20vw; margin: 2vh; margin-top: 8vh;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <h1>Popular Albums</h1>
+                            <p>Show all</p>
+                        </div>
+                        <div style="height: 90%; display: flex; justify-content: space-between;">
+                            <div class="al1 al">
+                                <div><img src="https://th.bing.com/th?id=OIP.VgmCj9YlpNE5y_WfMnHEWAHaNK&w=187&h=333&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"></div>
+                                <h2>Animal</h2>
+                                <p>Artist</p>
+                            </div>
+                            <div class="al2 al">
+                                <div><img src="https://th.bing.com/th?id=OIP.SGTIeJCfWiBbRee7qoojVAHaDt&w=349&h=174&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"></div>
+                                <h2>Dia</h2>
+                                <p>Artist</p>
+                            </div>
+                            <div class="al3 al">
+                                <div><img src="https://th.bing.com/th/id/OIP.3B9YUs55Em64o8dEZD5c3gHaKe?w=123&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"></div>
+                                <h2>Aavesham</h2>
+                                <p>Artist</p>
+                            </div>
+                            <div class="al4 al">
+                                <div><img src="https://th.bing.com/th?id=OIP.8_WVWEmZ1-fLliKshYPa_wAAAA&w=209&h=298&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"></div>
+                                <h2>Raajakumara</h2>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right" style="width: 25%; background-color: rgb(56, 56, 56); height: 100%; margin: 0.5%; border-radius: 2vh;">
+                <div class="r1;" style="display:flex;justify-content:space-between;align-items: center;">
+                    <h1 class="a"></h1>
+                    <i class="ri-code-s-fill"></i>
+                </div>
+                <div class="photo"></div>
+                <p class="qt"></p>
+            </div>
+        </div>
+        <div style="height: 13%; background-color: black; width: 100%;">
+            <div style="display: flex;justify-content: space-between;height: 100%;width:10%;height: 100%;">
+                <div class="pto" style="height:90%;width:100%"></div>
+                <div>
+                    <div class="ab"></div>
+                <div class="controls" style="display:flex;">
+                    <button id="playBtn">Play</button>
+                    <button id="pauseBtn">Pause</button>
+                    <button id="stopBtn">Stop</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var element = document.querySelector(".a");
+        var audioPlayer = document.createElement('audio');
+        audioPlayer.controls = true;
+
+        document.querySelector('.ab').appendChild(audioPlayer);
+
+        var songs = {
+            'Arijith Singh': 'unstoppable.mp3',
+            'Ed Shareen': 'unstoppable.mp3',
+            'Shreya Ghoshal': 'dia.mp3',
+            'Sonu Nigam': 'unstoppable.mp3',
+            'Animal': 'unstoppable.mp3',
+            'Dia': 'dia.mp3',
+            'Aavesham': 'unstoppable.mp3',
+            'Raajakumara': 'heatwaves.mp3',
+            'unstoppable':'unstoppable.mp3',
+            'heat waves': 'heatwaves.mp3'
+        };
+
+        document.querySelectorAll(".ar, .al").forEach(function(item) {
+            item.addEventListener('click', function() {
+                var h2Text = this.querySelector("h2").textContent;
+                var imgSrc = this.querySelector('div img').src;
+                element.textContent = h2Text;
+                document.querySelector('.photo').innerHTML = '<img src="' + imgSrc + '" alt="Image">';
+                document.querySelector('.pto').innerHTML = '<img src="' + imgSrc + '" alt="Image">';
+                document.querySelector('.qt').textContent="it's a very nice song"
+                
+                if (songs[h2Text]) {
+                    audioPlayer.src = songs[h2Text];
+                    audioPlayer.play();
+                }
+            });
+        });
+
+        document.getElementById('playBtn').addEventListener('click', function() {
+            audioPlayer.play();
+        });
+
+        document.getElementById('pauseBtn').addEventListener('click', function() {
+            audioPlayer.pause();
+        });
+
+        document.getElementById('stopBtn').addEventListener('click', function() {
+            audioPlayer.pause();
+            audioPlayer.currentTime = 0;
+        });
+    </script>
+</body>
+</html>
